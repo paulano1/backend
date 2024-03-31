@@ -6,7 +6,6 @@ const { v4: uuidv4 } = require('uuid');
 const admin = require('firebase-admin');
 require('dotenv').config();
 const app = express();
-const PORT = 4000;
 
 var serviceAccount = {
   "type": process.env.TYPE,
@@ -199,8 +198,8 @@ app.get('/getBalance', async (req, res) => {
 );
 
 
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `);
-});
+// app.listen(PORT, () => {
+//   console.log(`API listening on PORT ${PORT} `);
+// });
 // Export the Express API
 module.exports = app;
