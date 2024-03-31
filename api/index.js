@@ -20,8 +20,6 @@ var serviceAccount = {
   "client_x509_cert_url": process.env.CLIENT_X509_CERT_URL
 };
 
-console.log(serviceAccount);
-
 app.use(cors());
 app.use(express.json())
 admin.initializeApp({
